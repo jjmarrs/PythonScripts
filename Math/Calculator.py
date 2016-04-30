@@ -1,25 +1,6 @@
 import math
 
 
-def add(x, y):
-    return x + y
-
-
-def subtract(x, y):
-    return x - y
-
-
-def divide(x, y):
-    return x / y
-
-
-def multiply(x, y):
-    return x * y
-
-
-def squareRoot(x):
-    return math.sqrt(x)
-
 print("Hello, user. What would you like to do today?")
 
 print("1. Addition")
@@ -50,3 +31,9 @@ if choice == 3:
     num1 = int(input("Enter first number: "))
     num2 = int(input("Enter second number: "))
     print divide(num1, num2)
+
+if choice == 4:
+    num_list = list()
+    num_list.append(input("Enter numbers seperated by a comma: "))
+    for x in num_list:
+        print multiply(x)
