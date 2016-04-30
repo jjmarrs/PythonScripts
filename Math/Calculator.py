@@ -45,3 +45,8 @@ if choice == 2:
     num1 = int(input("Enter first number: "))
     num2 = int(input("Enter second number: "))
     print subtract(num1, num2)
+
+if choice == 3:
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+    print divide(num1, num2)
