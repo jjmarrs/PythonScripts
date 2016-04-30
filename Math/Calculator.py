@@ -37,6 +37,11 @@ choice = int(input("Enter choice (1,2,3,4,5): "))
 
 if choice == 1:
     num_list = list()
-    num_list.append(input("Enter numbers seperated by commas: "))
+    num_list.append(input("Enter numbers seperated by a comma: "))
     for x in num_list:
         print sum(x)
+
+if choice == 2:
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+    print subtract(num1, num2)
