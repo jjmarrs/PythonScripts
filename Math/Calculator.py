@@ -30,14 +30,14 @@ if choice == 1:
         print sum(x)
 
 if choice == 2:
-    num1 = int(input("Enter first number: "))
-    num2 = int(input("Enter second number: "))
-    print subtract(num1, num2)
+    subnum1 = int(input("Enter first number: "))
+    subnum2 = int(input("Enter second number: "))
+    print subtract(subnum1, subnum2)
 
 if choice == 3:
-    num1 = int(input("Enter first number: "))
-    num2 = int(input("Enter second number: "))
-    print divide(num1, num2)
+    divnum1 = int(input("Enter first number: "))
+    divnum2 = int(input("Enter second number: "))
+    print divide(divnum1, divnum2)
 
 if choice == 4:
     mult_list = list(map(int, raw_input("Enter numbers seperated by a comma: ").split(',')))
@@ -45,3 +45,8 @@ if choice == 4:
     for i in mult_list:
         num *= i
     print(num)
+
+if choice == 5:
+    sqrnum = int(raw_input("Please enter a number: "))
+    result = math.sqrt(sqrnum)
+    print result
