@@ -40,7 +40,8 @@ if choice == 3:
     print divide(divnum1, divnum2)
 
 if choice == 4:
-    mult_list = list(map(int, raw_input("Enter numbers seperated by a comma: ").split(',')))
+    mult_list = list(map(int, raw_input
+                     ("Enter numbers seperated by a comma: ").split(',')))
     num = 1
     for i in mult_list:
         num *= i
@@ -50,3 +51,5 @@ if choice == 5:
     sqrnum = int(raw_input("Please enter a number: "))
     result = math.sqrt(sqrnum)
     print result
+
+# Going to keep this program somewhat simple for now.
