@@ -40,7 +40,8 @@ if choice == 3:
     print divide(num1, num2)
 
 if choice == 4:
-    mult_list = list()
-    mult_list.append(input("Enter numbers seperated by a comma: "))
-    mult = functools.reduce(lambda x, y: x*y, [mult_list])
-    print mult
+    mult_list = list(map(int, raw_input("Enter numbers seperated by a comma: ").split(',')))
+    num = 1
+    for i in mult_list:
+        num *= i
+    print(num)
