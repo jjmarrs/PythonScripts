@@ -42,5 +42,5 @@ if choice == 3:
 if choice == 4:
     mult_list = list()
     mult_list.append(input("Enter numbers seperated by a comma: "))
-    mult = functools.reduce(operator.mul, [mult_list])
+    mult = functools.reduce(lambda x, y: x*y, [mult_list])
     print mult
